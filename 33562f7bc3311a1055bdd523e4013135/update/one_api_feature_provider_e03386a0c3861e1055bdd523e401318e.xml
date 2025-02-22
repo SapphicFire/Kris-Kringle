@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="one_api_feature_provider">
+    <one_api_feature_provider action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <feature display_value="082c811d4f143110917723e552ce0b89">d83386a0c3861e1055bdd523e401318a</feature>
+        <feature_service display_value="OneExtendGenericProvider">5233278353111110c271ddeeff7b129b</feature_service>
+        <feature_service_factory><![CDATA[(function() { return new global.OneExtendGenericProvider(); })()]]></feature_service_factory>
+        <name>Flow AI Recommendations provider</name>
+        <short_description>Auto Generated </short_description>
+        <sys_class_name>one_api_feature_provider</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-20 09:34:34</sys_created_on>
+        <sys_id>e03386a0c3861e1055bdd523e401318e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Flow AI Recommendations provider</sys_name>
+        <sys_package display_value="Kris Kringle" source="x_snc_kringle">33562f7bc3311a1055bdd523e4013135</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_update_name>one_api_feature_provider_e03386a0c3861e1055bdd523e401318e</sys_update_name>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:34:34</sys_updated_on>
+        <type>script</type>
+        <type_document display_value="FlowRecommendationFetcher">42bcc91d4f143110917723e552ce0b0a</type_document>
+    </one_api_feature_provider>
+</record_update>

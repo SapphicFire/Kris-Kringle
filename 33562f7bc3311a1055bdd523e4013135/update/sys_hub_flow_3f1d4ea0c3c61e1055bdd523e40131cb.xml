@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>make_a_secret_santa_pair</internal_name>
+        <label_cache>[{"name":"subflow.group","label":"Input➛Group","reference":"x_snc_kringle_secret_group","reference_display":"Secret group","type":"reference","base_type":"reference","usedInstances":{"f2ea11a4-fda4-485d-9458-5261f9dfcfb5":["conditions"],"acc7aeed-46c8-44e5-9e9f-bc85204190d1":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"25f2884d-b03d-405b-ae4f-75e42711cba2","uiTypeLabel":"Reference"}},{"name":"subflow.keeper.sys_id","label":"Input➛Keeper➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_kringle_secret_keeper","column_name":"sys_id","usedInstances":{"f2ea11a4-fda4-485d-9458-5261f9dfcfb5":["conditions"],"acc7aeed-46c8-44e5-9e9f-bc85204190d1":["conditions"]}},{"name":"subflow.keeper","label":"Input➛Keeper","reference":"x_snc_kringle_secret_keeper","reference_display":"Secret keeper","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d2901ffd-a4e5-4947-8242-95ec5361f57c","uiTypeLabel":"Reference"}},{"name":"subflow.keeper.excluded_keepers","label":"Input➛Keeper➛Excluded keepers","reference":"x_snc_kringle_secret_keeper","reference_display":"Excluded keepers","type":"glide_list","base_type":"glide_list","parent_table_name":"x_snc_kringle_secret_keeper","column_name":"excluded_keepers","usedInstances":{"4c3c71e5-4a74-4295-83be-71d2d9318f47":["condition"],"f2ea11a4-fda4-485d-9458-5261f9dfcfb5":["conditions"]}},{"name":"f2ea11a4-fda4-485d-9458-5261f9dfcfb5.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"671705aa-1b64-454a-88a3-88929f522ee9":["bounding_integer"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"acc7aeed-46c8-44e5-9e9f-bc85204190d1.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"53d50a8c-7315-4be1-93ca-56c5f15a5da8":["bounding_integer"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.counter","label":"Flow Variables➛Counter","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"6c843fc0-d471-4b3f-b535-a75a66090d49":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5f182569-b4f3-49b5-815b-becf19a4153c"}},{"name":"671705aa-1b64-454a-88a3-88929f522ee9.random_integer","label":"4 - Generate a random integer➛Random integer","reference_display":"Random integer","type":"integer","base_type":"integer","usedInstances":{"6c843fc0-d471-4b3f-b535-a75a66090d49":["condition"]},"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"6ae9481c-858e-4474-8008-537e35cad635"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Make a Secret Santa Pair</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-20 10:17:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f1d4ea0c3c61e1055bdd523e40131cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Make a Secret Santa Pair</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kris Kringle" source="x_snc_kringle">33562f7bc3311a1055bdd523e4013135</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_update_name>sys_hub_flow_3f1d4ea0c3c61e1055bdd523e40131cb</sys_update_name>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3f1d4ea0c3c61e1055bdd523e40131cb^sys_idNOT IN7b1d4ea0c3c61e1055bdd523e40131cc"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3f1d4ea0c3c61e1055bdd523e40131cb</id>
+        <name>Make a Secret Santa Pair</name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-20 10:17:56</sys_created_on>
+        <sys_id>7b1d4ea0c3c61e1055bdd523e40131cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-20 10:17:56</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7b1d4ea0c3c61e1055bdd523e40131cc"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3f1d4ea0c3c61e1055bdd523e40131cb^sys_idNOT IN694ea16dc34e925055bdd523e401315e,d54ea16dc34e925055bdd523e4013146"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=25f2884d-b03d-405b-ae4f-75e42711cba2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_kringle_secret_group</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>group</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Group</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Make a Secret Santa Pair">3f1d4ea0c3c61e1055bdd523e40131cb</model>
+        <model_id>3f1d4ea0c3c61e1055bdd523e40131cb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3f1d4ea0c3c61e1055bdd523e40131cb</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_kringle_secret_group">x_snc_kringle_secret_group</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>694ea16dc34e925055bdd523e401315e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=694ea16dc34e925055bdd523e401315e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=d2901ffd-a4e5-4947-8242-95ec5361f57c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_kringle_secret_keeper</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>keeper</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Keeper</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Make a Secret Santa Pair">3f1d4ea0c3c61e1055bdd523e40131cb</model>
+        <model_id>3f1d4ea0c3c61e1055bdd523e40131cb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3f1d4ea0c3c61e1055bdd523e40131cb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_kringle_secret_keeper">x_snc_kringle_secret_keeper</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:04</sys_created_on>
+        <sys_id>d54ea16dc34e925055bdd523e4013146</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d54ea16dc34e925055bdd523e4013146"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3f1d4ea0c3c61e1055bdd523e40131cb^sys_idNOT IN614ea16dc34e925055bdd523e40131a1,694ea16dc34e925055bdd523e40131a0,a54ea16dc34e925055bdd523e401319f,a94ea16dc34e925055bdd523e401319d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Generate a random integer">696c8e60c3c61e1055bdd523e4013158</action_type>
+        <action_type_parent display_value="Generate a random integer">8304cea0c3861e1055bdd523e4013147</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Make a Secret Santa Pair">3f1d4ea0c3c61e1055bdd523e40131cb</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>2fd9bdfb-1317-47fd-82e0-57858a6b86d9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>614ea16dc34e925055bdd523e40131a1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <ui_id>53d50a8c-7315-4be1-93ca-56c5f15a5da8</ui_id>
+        <values>H4sIAAAAAAAA/41SyW7bMBD9lYJnS6CsxbFvXRAgQNsAXXIJAmFEjmwCFKlQpBPX8L93KMl2FxTokW84byMfj0xJtmHLrBI3WHGRiyrDjJdlI2W5zLHgWZ6Vgi2YgQ7pZmODkcpsa2U8btHRZA86xNHxCEKsAFEmBdElRYFlssZ1mzTiplzyIltzmaXvicGfTrQo1dBrODzM+4SIndLSoWGbx6cF68GRqCeRzfGPkT/0WGtoUNPi3cXK/4Y5b76b07y5pvl3zqhJkytgnYzesgXDV49GIqm3oAdcsA6MBG/d4YI4BHlv9BXYEdGUuoPXQf0g7oLHey1STHFpxCqB971X1kyIh0afh1aHznyeHMdCsYWg/S+FhgFriX00F9Vm6fbrzr58OQvdKjPmmIfaCtCXE3jvVBM8DvERgvpGJXz8q3fU2JFA3UHfx9J6Z/dqJCWPXbrVdEhbbV/IzKC2JgURA6XUEaS3hH8Y4QdwKqb7RDQj76T3W+lBfTfqOeBdfOqy4YUUuUyQV/TrVjkmUKxEkq1F1fIKcyFLdhpLrZ9DjDXVNBdST53ShUE41fu35GqPc/bT00/8eefFHgMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Make a Secret Santa Pair">3f1d4ea0c3c61e1055bdd523e40131cb</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>2fd9bdfb-1317-47fd-82e0-57858a6b86d9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>694ea16dc34e925055bdd523e40131a0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <ui_id>acc7aeed-46c8-44e5-9e9f-bc85204190d1</ui_id>
+        <values>H4sIAAAAAAAA/9VXS0/jMBD+K92coyqhUFhuKxDSHgAJEBcWLMd2WgvXztpOH1T97zu2k7S0BUrpIjhmnt/MfDN176YRp9FxdJTvJwlOD44Ok6TTSZJut0NwmmWdLsmSbD+L4kjiAQNLizPB4HOIRem+x8hIgh41lz3BkGFEM4seGSuYBivKTSHw5LYyvvbqVqMmfS6oZjI6vruPowJryGFBczxdUtlJwZDAGRMQ5cZBaF04PPHG8J85r5bjEtSfSIbQSlOHJYkjNrZMUgapciwMi6MBlhRbpSeNRDNML6WYC/pcWogYOeOx4U8Q/ihxdjmDsggLOtJXnLDLwnIlgyQgCkolyoG8CEhdN1mOS2HrboKkNAxRaCaAc9mq1Pl1X42u6kRnXPo6KqVQBIvmC1ureVZaZlzTmWADCIQGuChgoKjQasi9M2AZtHsCPtq5UCNIanhPtjFxwNvQC9w+A/mpF99izV0V5xDGzznnAsaKQneNKrUvf4iIKI1XaCxNiBXNfI/Q39KhDFVX9aHQIjAwRPPC/gKHIatKmcUbUfkgmc+eKEm5y2kW+FwxuKdVWfwpIQSdTk2ZuaLbXjibPXCDNCO84AAq2HgID2ZiEKc/lt0C3dtBO5utrsWn5Nxu104We7Rpf9c6r2t6tXXPZNXWpTvbOoD7v/fO6vLrrd1bixQKfmObyOGr0z6YD9YobVHo3MI6rZJ9ayqecSbos7O/Abja+dKxqpVNXsJbMTF3OZbu/973uf8f5GFOUWgAl4JL/3sIASHNFyZo8vo5+rk0cD/nhWvvZNiQVZrillWtp+3vpp9rTdQNQNaO14CodRNQrgFeX8w6fMXRzs442tl7gaPAkLtpA7Npz5pO1u8mN6Pa/snZ42V7YMuCQzq7bzh+sl3O9L0591zOpSXsvGsLFykUNKcvMGnHj7VP3tbYJeyDa5UPha1EI057zM6z11ZU2REWj+v01ao1y+LL+/DDb//VJeum84UCssNjysCoFl9+KbwTVu9AGgfxdmfgt7Ss55u3KcTa8xyPW1cNxrXAq1vAmxwVp/d3+HTa6Q9W3eG1a1I3+lv8pdmWq/f/APjPrrhxDwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Generate a random integer">696c8e60c3c61e1055bdd523e4013158</action_type>
+        <action_type_parent display_value="Generate a random integer">8304cea0c3861e1055bdd523e4013147</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Make a Secret Santa Pair">3f1d4ea0c3c61e1055bdd523e40131cb</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>4c3c71e5-4a74-4295-83be-71d2d9318f47</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>a54ea16dc34e925055bdd523e401319f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <ui_id>671705aa-1b64-454a-88a3-88929f522ee9</ui_id>
+        <values>H4sIAAAAAAAA/41R24rbMBD9laLn2Nix5U3y1gsLC20XetmXZTFjaZQIZMkry9lNQ/69I9tJeqHQF4HO0cy56PHItGQbtswrscIqE4Wocswzzhsp+bLAMsuLnAu2YBZapJeNG6zUdltrG3CLnpg9mCFSx6NaIuQ5lImSdJQrLpN1yVcJX1a5WkslVMPT97QhnE40KHXfGTg8zPOEiJ020qNlm8enBevAk2ggkc3xDyocOqwNNGho8O5i5X/DnCffzWneXNP8O2fUJOYKOC+jt3zB8DWglUjqCkyPC9aClRCcP1wQjyDvrbkCO1o0pW7htdc/aHeZxXcKKaa4NOK0wPsuaGcnJEBjzqQzQ2s/T45joahgMOGXQocea4ldNBfVZmn1dedevpyFbrUdc8ykcQLM5QYheN0MAfv4CYP+RiV8/Kt3NNiSQN1C18XSOu/2elxKHtt0a+iSKuNeyEyvtzYFEQOl1BGkt4R/GOEH8Dqm+0Rrxr2T3m+lD/q71c8D3sWv5k1WSlHIBLNKJuVNgQmUNyLJ16JSWYWFkJydxlLr5yHGmmqaC6mnTulBL7zuwltytcc5++npJ3wBr+AeAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Make a Secret Santa Pair">3f1d4ea0c3c61e1055bdd523e40131cb</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>4c3c71e5-4a74-4295-83be-71d2d9318f47</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>a94ea16dc34e925055bdd523e401319d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <ui_id>f2ea11a4-fda4-485d-9458-5261f9dfcfb5</ui_id>
+        <values>H4sIAAAAAAAA/9VXTU/jMBD9K92coyqhUFhuKxDSHgAJ0F5YsBzbaS1cJ2s7/aDqf9/xR9LSllJKdwXHeGY8b2bes537acRpdBqd5IdJgtOjk+Mk6XSSpNvtEJxmWadLsiQ7zKI4knjAwNPgTDD4HGJR2e8x0pKgJ8VlTzCkGVHMoCfGSqbAi3JdCjz5FZxvnbnVmEmfC6qYjE7vH+KoxApyGLCcTpdMZlIyJHDGBOxyZyG0riyeeGv4L4JXy7EJ6k8k/daFohZLEkdsbJikDFLlWGgWRwMsKTaFmjQrimF6LcV8oc+lgR0j6zzW/Bm2P0msX86gLMK8jfQLTth1aXgh/YpH5I2FqAbyyiO13WQ5roSpuwkrlWaIQjMBnM0WUue3/WJ0Uye64NLVEYyiIFg0X9gYxbPKMG2bzgQbwEZogMsSBopKVQy5CwYsg3ZPwEc7F8UIkmrek21MLPA29AK3L2D93C3/worbKi5hGzfnnAsYK/Ld1UWlXPlDRESlnUFhqf1e0cz1CP2pLEpfdagP+RaBgyaKl+YHBAxZKGUWb0Xlo2Q+e1JIym1OvcDnwOCeKqrydwVb0OlUV5ktuu0WZ7NHrpFihJccQHkfB+FRTzTi9NtymKd721shfLMbG0NXgGtBRHo2W9XR5wS5m5rPFqew7QTXBq8ba9D1i7Wg63Rvuga4/1rZRlWfT9hvSdUX/IZeyfHGaR/NB6sLZZDv3IJgV9WxMxUvOBP0xcWyBbg6+NqyqpVNXsMbmJjbHEs3zMHXuWE+yMOcIt8ALgWX7saFDSHNJyZosvk4+r40cDfnhfvErmFNVmmKW6ZoPe9+brq51kTdAmQdeAuIWnce5Rrg9YlZbx842tkbRzsHr3AUGHI/bWA27VnTyfplZmdU+z9bf7zsD2xZCEhnDw3Hz3bLmb4354HNuSTCzrtUuEghbzl/hUl7fg7+Z7XGNmEfQkM+5FWJRpz2mJlnr71oYUZYPK2zB6k1YnHlffhpebhRZN10LiggO7y+NIxq8W2Zwjth9RxIY7+82zHwUxrWc83bFmIdeYnHrZsG41rg4SzgTY7A6cM9Pp32emHVHV4rk7rRX+KnaVeuPvwFWaxiIdMPAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3f1d4ea0c3c61e1055bdd523e40131cb^sys_idNOT IN2d4ea16dc34e925055bdd523e401319a,a14ea16dc34e925055bdd523e401319c,e14ea16dc34e925055bdd523e40131a0"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ad4ea16dc34e925055bdd523e4013199</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Make a Secret Santa Pair">3f1d4ea0c3c61e1055bdd523e40131cb</flow>
+        <flow_variables_assigned>counter</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>2d4ea16dc34e925055bdd523e401319a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <ui_id>88adf7a8-5260-45c6-84bd-cff72279f3f2</ui_id>
+        <values>H4sIAAAAAAAA/5WPMQ7CMAxF7+K5A3O3juwVC+oQEhcsTFzFSauq6t1xJBCs3Z6e/f3lDaTkqWTtpVOle4T2OjRAsTrjDShAC9BAdC808lJixmRidlyqORn7B3FI+EmrTzTlzmeabWF0rLgPNZDI3RgP3A2kE7v1crQqoCcliX3tO3+fqYPV+sj/q0XSc2RZfm5/A+XUJ9oWAQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2d4ea16dc34e925055bdd523e401319b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Make a Secret Santa Pair">3f1d4ea0c3c61e1055bdd523e40131cb</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>a14ea16dc34e925055bdd523e401319c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <ui_id>4c3c71e5-4a74-4295-83be-71d2d9318f47</ui_id>
+        <values>H4sIAAAAAAAA/+VUXWvbMBT9K0HPxjhOE9a8lW2FwtqMJRTGKOZauo5FZcmT5Hws5L/vyh9tWVOWjb3tzTr3Suecew8+MNP4uvFuZa6ck2vN5t8eIiZ1wOj7wKRgc1YkUIwv+ZhP0tkkTZL03cU4n03ycSomgDBhEdNQIXVyo4X00uisBSK2AdWEgi9xPyphgyPQI9xx1QgUo0fEGi21CelqBfv787p5KZWw2KutwRKXp8r88EvJ72vMFOSo6NGlt1Kv6fq5noaL7wdTo08t8rbbwEe4G5iMFUHWOIkY7jxqcsHmBSiHEatAC/DG7p8QiyAWWj0DpdSenmOheefkD3o7nU5DY4HkkWNX5KWRHBd1UNIhHnI1FI1qKn3XCQ6TxgIa5YdJE9I4zARNltQFup67WJZm+2Ugupa6ddIXleGgnk7gyW/eeHRhA6iwooeyCuqappDV1mxke5m0VPFa0SEulNkSaYhcDDwIj2kYEF8T/qGF78HK4OKWnmmXHmTm4CTP2niGlFiycGzHkX1vgqDOYG8l66ZBDY5bWfsr4tlgr/oY9dm+hGkxHSfT0zm4mJ3Y9otYHw6uyYOZuAtnPIQ1687ueLxZ3i1WH28/r76+zvmfXv8XwT/D8Kvgnx7CG2lPf5P2sLYzw54kyX+adumyLrW9t5b8r8P+EBLbMbguIAK5dCRkFbCb4X8fCnvatOQvoa2xj8HCM3b8CcVSDQM5BgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6d4ea16dc34e925055bdd523e401319f</block>
+        <comment/>
+        <connected_to>4c3c71e5-4a74-4295-83be-71d2d9318f47</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Make a Secret Santa Pair">3f1d4ea0c3c61e1055bdd523e40131cb</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>e14ea16dc34e925055bdd523e40131a0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <ui_id>2fd9bdfb-1317-47fd-82e0-57858a6b86d9</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3f1d4ea0c3c61e1055bdd523e40131cb^sys_idNOT INe14ea16dc34e925055bdd523e401318f,e54ea16dc34e925055bdd523e4013193"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=5f182569-b4f3-49b5-815b-becf19a4153c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>counter</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Counter</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Make a Secret Santa Pair">3f1d4ea0c3c61e1055bdd523e40131cb</model>
+        <model_id>3f1d4ea0c3c61e1055bdd523e40131cb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_3f1d4ea0c3c61e1055bdd523e40131cb</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>e14ea16dc34e925055bdd523e401318f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=0e880f2f-c0b3-46ea-9da8-4936fb927624</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_kringle_secret_keeper</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_keeper</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Current keeper</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Make a Secret Santa Pair">3f1d4ea0c3c61e1055bdd523e40131cb</model>
+        <model_id>3f1d4ea0c3c61e1055bdd523e40131cb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_3f1d4ea0c3c61e1055bdd523e40131cb</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_kringle_secret_keeper">x_snc_kringle_secret_keeper</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>e54ea16dc34e925055bdd523e4013193</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3f1d4ea0c3c61e1055bdd523e40131cb^sys_idNOT IN214ea16dc34e925055bdd523e4013151,a94ea16dc34e925055bdd523e4013161"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>keeper</element>
+        <help/>
+        <hint/>
+        <label>Keeper</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3f1d4ea0c3c61e1055bdd523e40131cb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>214ea16dc34e925055bdd523e4013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kris Kringle" source="x_snc_kringle">33562f7bc3311a1055bdd523e4013135</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>group</element>
+        <help/>
+        <hint/>
+        <label>Group</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3f1d4ea0c3c61e1055bdd523e40131cb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>asteroid</sys_created_by>
+        <sys_created_on>2024-11-23 10:37:05</sys_created_on>
+        <sys_id>a94ea16dc34e925055bdd523e4013161</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kris Kringle" source="x_snc_kringle">33562f7bc3311a1055bdd523e4013135</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kris Kringle">33562f7bc3311a1055bdd523e4013135</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>asteroid</sys_updated_by>
+        <sys_updated_on>2024-11-23 10:37:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3f1d4ea0c3c61e1055bdd523e40131cb"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3f1d4ea0c3c61e1055bdd523e40131cb"/>
+</record_update>
